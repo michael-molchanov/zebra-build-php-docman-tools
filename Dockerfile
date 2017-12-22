@@ -9,6 +9,7 @@ RUN apk add --update --no-cache nodejs nodejs-npm nodejs-dev yarn \
   && rm -rf /var/cache/apk/* \
   && npm install -g gulp-cli grunt-cli \
   && grunt --version \
+  && gulp --version \
   && yarn versions
 
 # Install compass.
